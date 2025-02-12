@@ -62,34 +62,34 @@ const menuOptions: MenuOption[] = [
         { default: () => '聊天' },
       ),
   },
-  {
-    key: 'menu-draw',
-    icon: renderIcon(ColorPaletteOutline),
-    label: () =>
-      h(
-        RouterLink,
-        {
-          to: {
-            name: 'Draw',
-          },
-        },
-        { default: () => '绘画' },
-      ),
-  },
-  {
-    key: 'menu-gallery',
-    icon: renderIcon(ImagesOutline),
-    label: () =>
-      h(
-        RouterLink,
-        {
-          to: {
-            name: 'Gallery',
-          },
-        },
-        { default: () => '画廊' },
-      ),
-  },
+  // {
+  //   key: 'menu-draw',
+  //   icon: renderIcon(ColorPaletteOutline),
+  //   label: () =>
+  //     h(
+  //       RouterLink,
+  //       {
+  //         to: {
+  //           name: 'Draw',
+  //         },
+  //       },
+  //       { default: () => '绘画' },
+  //     ),
+  // },
+  // {
+  //   key: 'menu-gallery',
+  //   icon: renderIcon(ImagesOutline),
+  //   label: () =>
+  //     h(
+  //       RouterLink,
+  //       {
+  //         to: {
+  //           name: 'Gallery',
+  //         },
+  //       },
+  //       { default: () => '画廊' },
+  //     ),
+  // },
   {
     key: 'menu-knowledge-base',
     icon: renderIcon(LibraryOutline),
@@ -107,20 +107,20 @@ const menuOptions: MenuOption[] = [
         { default: () => '知识库' },
       ),
   },
-  {
-    key: 'menu-aisearch',
-    icon: renderIcon(SearchOutline),
-    label: () =>
-      h(
-        RouterLink,
-        {
-          to: {
-            name: 'AiSearch',
-          },
-        },
-        { default: () => '搜索' },
-      ),
-  },
+  // {
+  //   key: 'menu-aisearch',
+  //   icon: renderIcon(SearchOutline),
+  //   label: () =>
+  //     h(
+  //       RouterLink,
+  //       {
+  //         to: {
+  //           name: 'AiSearch',
+  //         },
+  //       },
+  //       { default: () => '搜索' },
+  //     ),
+  // },
 ]
 function renderIcon(icon: Component) {
   return () => h(NIcon, null, { default: () => h(icon) })

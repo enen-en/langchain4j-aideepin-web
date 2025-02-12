@@ -1,7 +1,7 @@
 <script setup lang='ts'>
 import { computed, onMounted, ref, watch } from 'vue'
 import { NModal, NTabPane, NTabs } from 'naive-ui'
-import General from './General.vue'
+import General from './General.vue' 
 import Quota from './Quota.vue'
 import ModifyPassword from './ModifyPassword.vue'
 import api from '@/api'
@@ -67,13 +67,13 @@ onMounted(() => {
             <General />
           </div>
         </NTabPane>
-        <NTabPane name="Quota" tab="Quota">
+        <!-- <NTabPane name="Quota" tab="Quota">
           <template #tab>
             <SvgIcon class="text-lg" icon="eos-icons:quota-outlined" />
             <span class="ml-2">{{ $t('setting.quota') }}</span>
           </template>
           <Quota :user-config="userConfig" @reloadConfig="fetchConfig" />
-        </NTabPane>
+        </NTabPane> -->
         <!-- <NTabPane name="Advanced" tab="Advanced">
           <template #tab>
             <SvgIcon class="text-lg" icon="ri:equalizer-line" />
